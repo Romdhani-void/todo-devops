@@ -1,0 +1,20 @@
+[Tue 02/10/2026 19:11:16.11] --------whoami-------- 
+desktop-d5ghn4b\romdhani
+[Tue 02/10/2026 19:11:16.16] --------whoami-------- 
+[Tue 02/10/2026 19:11:16.16] Waiting for Runner.Listener.exe (2784) to complete 
+Runner.Listener.exe           2784 Console                    1     89,304 K
+[Tue 02/10/2026 19:11:16.46] Process 2784 still running, check again after 1 second. 
+[Tue 02/10/2026 19:11:17.69] Process 2784 finished running 
+[Tue 02/10/2026 19:11:17.69] Sleep 1 more second to make sure process exited 
+[Tue 02/10/2026 19:11:18.74] Re-organize folders 
+[Tue 02/10/2026 19:11:18.80] move "C:\Users\Romdhani\Desktop\monday\actions-runner\bin" "C:\Users\Romdhani\Desktop\monday\actions-runner\bin.2.321.0" 
+        1 dir(s) moved.
+[Tue 02/10/2026 19:11:18.87] move "C:\Users\Romdhani\Desktop\monday\actions-runner\externals" "C:\Users\Romdhani\Desktop\monday\actions-runner\externals.2.321.0" 
+        1 dir(s) moved.
+[Tue 02/10/2026 19:11:18.88] Create junction bin folder 
+Junction created for C:\Users\Romdhani\Desktop\monday\actions-runner\bin <<===>> C:\Users\Romdhani\Desktop\monday\actions-runner\bin.2.331.0
+[Tue 02/10/2026 19:11:18.89] Create junction externals folder 
+Junction created for C:\Users\Romdhani\Desktop\monday\actions-runner\externals <<===>> C:\Users\Romdhani\Desktop\monday\actions-runner\externals.2.331.0
+[Tue 02/10/2026 19:11:18.89] Update succeed 
+[Tue 02/10/2026 19:11:18.90] update.finished file creation succeed 
+[Tue 02/10/2026 19:11:18.90] Rename "C:\Users\Romdhani\Desktop\monday\actions-runner\_diag\SelfUpdate-20260210-181115.log" to be "C:\Users\Romdhani\Desktop\monday\actions-runner\_diag\SelfUpdate-20260210-181115.log.succeed" 

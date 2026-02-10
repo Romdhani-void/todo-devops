@@ -1,0 +1,283 @@
+[2026-02-10 18:10:02Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:10:02Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials'
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:10:02Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.runner'
+[2026-02-10 18:10:02Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2026-02-10 18:10:02Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26200.
+[2026-02-10 18:10:02Z INFO Listener] Version: 2.321.0
+[2026-02-10 18:10:02Z INFO Listener] Commit: e249007931b7c8e857797fa259c167f0bd4f997a
+[2026-02-10 18:10:02Z INFO Listener] Culture: en-US
+[2026-02-10 18:10:02Z INFO Listener] UI Culture: en-US
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:10:02Z INFO Listener] Validating directory permissions for: 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:10:02Z INFO CommandLineParser] Parse
+[2026-02-10 18:10:02Z INFO CommandLineParser] Parsing 1 args
+[2026-02-10 18:10:02Z INFO CommandLineParser] parsing argument
+[2026-02-10 18:10:02Z INFO CommandLineParser] HasArgs: False
+[2026-02-10 18:10:02Z INFO CommandLineParser] Adding Command: run
+[2026-02-10 18:10:02Z INFO Listener] Arguments parsed
+[2026-02-10 18:10:02Z INFO Runner] ExecuteCommand
+[2026-02-10 18:10:02Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\Romdhani\Desktop\monday\actions-runner\bin\Runner.Listener.dll
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:10:02Z INFO ConfigurationStore] binPath: C:\Users\Romdhani\Desktop\monday\actions-runner\bin
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:10:02Z INFO ConfigurationStore] RootFolder: C:\Users\Romdhani\Desktop\monday\actions-runner
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:10:02Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.runner'
+[2026-02-10 18:10:02Z INFO ConfigurationStore] ConfigFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.runner
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:10:02Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials'
+[2026-02-10 18:10:02Z INFO ConfigurationStore] CredFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:10:02Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_migrated'
+[2026-02-10 18:10:02Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_migrated
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:10:02Z INFO HostContext] Well known config file 'Service': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.service'
+[2026-02-10 18:10:02Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.service
+[2026-02-10 18:10:02Z INFO CommandSettings] Flag 'help': 'False'
+[2026-02-10 18:10:02Z INFO CommandSettings] Flag 'version': 'False'
+[2026-02-10 18:10:02Z INFO CommandSettings] Flag 'commit': 'False'
+[2026-02-10 18:10:02Z INFO CommandSettings] Flag 'check': 'False'
+[2026-02-10 18:10:02Z INFO CommandSettings] Command 'configure': 'False'
+[2026-02-10 18:10:02Z INFO CommandSettings] Command 'remove': 'False'
+[2026-02-10 18:10:02Z INFO CommandSettings] Command 'warmup': 'False'
+[2026-02-10 18:10:02Z INFO ConfigurationManager] LoadSettings
+[2026-02-10 18:10:02Z INFO ConfigurationStore] IsConfigured()
+[2026-02-10 18:10:02Z INFO ConfigurationStore] IsConfigured: True
+[2026-02-10 18:10:02Z INFO ConfigurationManager] Is configured: True
+[2026-02-10 18:10:02Z INFO ConfigurationStore] Read setting file: 315 chars
+[2026-02-10 18:10:02Z INFO ConfigurationManager] Settings Loaded
+[2026-02-10 18:10:02Z INFO ConfigurationStore] IsServiceConfigured()
+[2026-02-10 18:10:02Z INFO ConfigurationStore] IsServiceConfigured: False
+[2026-02-10 18:10:02Z INFO CommandSettings] Command 'run': 'True'
+[2026-02-10 18:10:02Z INFO ConfigurationStore] IsConfigured()
+[2026-02-10 18:10:02Z INFO ConfigurationStore] IsConfigured: True
+[2026-02-10 18:10:02Z INFO ConfigurationManager] Is configured: True
+[2026-02-10 18:10:02Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2026-02-10 18:10:02Z INFO Runner] Set runner startup type - Manual
+[2026-02-10 18:10:02Z INFO CommandSettings] Flag 'once': 'False'
+[2026-02-10 18:10:02Z INFO CommandSettings] Flag 'once': 'False'
+[2026-02-10 18:10:02Z INFO Runner] RunAsync
+[2026-02-10 18:10:02Z INFO ConfigurationManager] LoadSettings
+[2026-02-10 18:10:02Z INFO ConfigurationStore] IsConfigured()
+[2026-02-10 18:10:02Z INFO ConfigurationStore] IsConfigured: True
+[2026-02-10 18:10:02Z INFO ConfigurationManager] Is configured: True
+[2026-02-10 18:10:02Z INFO ConfigurationManager] Settings Loaded
+[2026-02-10 18:10:02Z INFO MessageListener] {
+  "AgentId": 3,
+  "AgentName": "DESKTOP-D5GHN4B",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus23.actions.githubusercontent.com/6X5hJtj5j6tegjX0UZvUGUKy3qrH1XVtR3m6lu2pxyZQSkB1bU/",
+  "GitHubUrl": "https://github.com/Romdhani-void/todo-devops",
+  "WorkFolder": "_work"
+}
+[2026-02-10 18:10:02Z INFO MessageListener] Loading Credentials
+[2026-02-10 18:10:02Z INFO ConfigurationStore] HasCredentials()
+[2026-02-10 18:10:02Z INFO ConfigurationStore] stored True
+[2026-02-10 18:10:02Z INFO CredentialManager] GetCredentialProvider
+[2026-02-10 18:10:02Z INFO CredentialManager] Creating type OAuth
+[2026-02-10 18:10:02Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:10:02Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:10:02Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams'
+[2026-02-10 18:10:02Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-10 18:10:02Z INFO MessageListener] Attempt to create session.
+[2026-02-10 18:10:02Z INFO MessageListener] Connecting to the Runner Server...
+[2026-02-10 18:10:02Z INFO RunnerServer] EstablishVssConnection
+[2026-02-10 18:10:02Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2026-02-10 18:10:02Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-02-10 18:10:02Z INFO RunnerServer] EstablishVssConnection
+[2026-02-10 18:10:02Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-02-10 18:10:02Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-02-10 18:10:02Z INFO RunnerServer] EstablishVssConnection
+[2026-02-10 18:10:02Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-02-10 18:10:02Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-02-10 18:10:03Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-02-10 18:10:03Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-02-10 18:10:03Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-02-10 18:10:03Z INFO MessageListener] VssConnection created
+[2026-02-10 18:10:03Z INFO Terminal] WRITE LINE: 
+[2026-02-10 18:10:03Z INFO Terminal] WRITE LINE: 
+[2026-02-10 18:10:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-10 18:10:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-10 18:10:03Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-02-10 18:10:04Z INFO MessageListener] Session created.
+[2026-02-10 18:10:04Z INFO Terminal] WRITE LINE: Current runner version: '2.321.0'
+[2026-02-10 18:10:04Z INFO Terminal] WRITE LINE: 2026-02-10 18:10:04Z: Listening for Jobs
+[2026-02-10 18:10:04Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2026-02-10 18:10:04Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-10 18:10:05Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-02-10 18:10:56Z INFO MessageListener] Message '0' received from session '9c23c818-bfcc-4ca1-9d33-6d10ccb85366'.
+[2026-02-10 18:10:56Z INFO Runner] Refresh message received, kick-off selfupdate background process.
+[2026-02-10 18:10:56Z INFO SelfUpdater] Version '2.331.0' of 'agent' package available in server.
+[2026-02-10 18:10:56Z INFO SelfUpdater] Current running runner version is 2.321.0
+[2026-02-10 18:10:56Z INFO SelfUpdater] An update is available.
+[2026-02-10 18:10:56Z INFO Terminal] WRITE LINE: Runner update in progress, do not shutdown runner.
+[2026-02-10 18:10:56Z INFO SelfUpdater] RunnerPlatform: win-x64
+[2026-02-10 18:10:56Z INFO Terminal] WRITE LINE: Downloading 2.331.0 runner
+[2026-02-10 18:10:56Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:10:56Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:10:56Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:10:56Z INFO SelfUpdater] Attempt 1: save latest runner into C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_update\runner1.zip.
+[2026-02-10 18:10:56Z INFO SelfUpdater] Download runner: begin download
+[2026-02-10 18:10:56Z INFO SelfUpdater] Downloading https://github.com/actions/runner/releases/download/v2.331.0/actions-runner-win-x64-2.331.0.zip
+[2026-02-10 18:11:12Z INFO SelfUpdater] Download runner: finished download
+[2026-02-10 18:11:13Z INFO SelfUpdater] Validated Runner Hash matches C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_update\runner1.zip : 473e74b86cd826e073f1c1f2c004d3fb9e6c9665d0d51710a23e5084a601c78a
+[2026-02-10 18:11:14Z INFO SelfUpdater] Finished getting latest runner package at: C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_update.
+[2026-02-10 18:11:14Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:14Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:14Z INFO SelfUpdater] Copy C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_update\bin to C:\Users\Romdhani\Desktop\monday\actions-runner\bin.2.331.0.
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO SelfUpdater] Copy C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_update\externals to C:\Users\Romdhani\Desktop\monday\actions-runner\externals.2.331.0.
+[2026-02-10 18:11:15Z INFO SelfUpdater] Copy any remaining .sh/.cmd files into runner root.
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO SelfUpdater] Copy C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_update\config.cmd to C:\Users\Romdhani\Desktop\monday\actions-runner\config.cmd
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO SelfUpdater] Copy C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_update\run-helper.cmd.template to C:\Users\Romdhani\Desktop\monday\actions-runner\run-helper.cmd.template
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO SelfUpdater] Copy C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_update\run-helper.sh.template to C:\Users\Romdhani\Desktop\monday\actions-runner\run-helper.sh.template
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO SelfUpdater] Copy C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_update\run.cmd to C:\Users\Romdhani\Desktop\monday\actions-runner\run.cmd
+[2026-02-10 18:11:15Z INFO SelfUpdater] Download latest runner and unzip into runner root.
+[2026-02-10 18:11:15Z INFO Terminal] WRITE LINE: Waiting for current job finish running.
+[2026-02-10 18:11:15Z INFO SelfUpdater] DownloadUrl: https://github.com/actions/runner/releases/download/v2.331.0/actions-runner-win-x64-2.331.0.zip
+[2026-02-10 18:11:15Z INFO SelfUpdater] PackageDownloadTime: 15914ms
+[2026-02-10 18:11:15Z INFO SelfUpdater] Attempts: 1
+[2026-02-10 18:11:15Z INFO SelfUpdater] PackageSize: 93MB
+[2026-02-10 18:11:15Z INFO SelfUpdater] ValidateHashTime: 333ms
+[2026-02-10 18:11:15Z INFO SelfUpdater] PackageExtractTime: 1613ms
+[2026-02-10 18:11:15Z INFO SelfUpdater] CopyRunnerToRootTime: 752ms
+[2026-02-10 18:11:15Z INFO SelfUpdater] All running job has exited.
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO SelfUpdater] Delete old version runner backup.
+[2026-02-10 18:11:15Z INFO Terminal] WRITE LINE: Generate and execute update script.
+[2026-02-10 18:11:15Z INFO SelfUpdater] DeleteRunnerBackupTime: 2ms
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:15Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:11:16Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:16Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:16Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:16Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:16Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:11:16Z INFO SelfUpdater] Generate update script into: C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_update.cmd
+[2026-02-10 18:11:16Z INFO SelfUpdater] Which2: 'cmd.exe'
+[2026-02-10 18:11:16Z INFO SelfUpdater] Location: 'C:\WINDOWS\system32\cmd.exe'
+[2026-02-10 18:11:16Z INFO SelfUpdater] Update script start running
+[2026-02-10 18:11:16Z INFO Terminal] WRITE LINE: Runner will exit shortly for update, should be back online within 10 seconds.
+[2026-02-10 18:11:16Z INFO SelfUpdater] TotalUpdateTime: 19717ms
+[2026-02-10 18:11:16Z INFO Terminal] WRITE LINE: Runner update process finished.
+[2026-02-10 18:11:16Z INFO Runner] Auto update task finished at backend, an runner update is ready to apply exit the current runner instance.
+[2026-02-10 18:11:16Z INFO Runner] Stop message queue looping.
+[2026-02-10 18:11:16Z WARN GitHubActionsService] GET request to https://broker.actions.githubusercontent.com/message?sessionId=9c23c818-bfcc-4ca1-9d33-6d10ccb85366&status=Online&runnerVersion=2.321.0&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2026-02-10 18:11:16Z ERR  BrokerServer] Catch exception during request
+[2026-02-10 18:11:16Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2026-02-10 18:11:16Z ERR  BrokerServer] #####################################################
+[2026-02-10 18:11:16Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+[2026-02-10 18:11:16Z ERR  BrokerServer] #####################################################
+[2026-02-10 18:11:16Z ERR  BrokerServer] System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+[2026-02-10 18:11:16Z ERR  BrokerServer] #####################################################
+[2026-02-10 18:11:16Z ERR  BrokerServer] System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+[2026-02-10 18:11:16Z WARN BrokerServer] Back off 10.744 seconds before next retry. 4 attempt left.
+[2026-02-10 18:11:16Z INFO MessageListener] Get next message has been cancelled.
+[2026-02-10 18:11:16Z INFO Runner] Ignore any exception after cancel message loop. System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+   at GitHub.Runner.Listener.MessageListener.GetNextMessageAsync(CancellationToken token)
+   at GitHub.Runner.Listener.Runner.RunAsync(RunnerSettings settings, Boolean runOnce)
+[2026-02-10 18:11:16Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2026-02-10 18:11:16Z INFO Runner] Deleting Runner Session...
+[2026-02-10 18:11:16Z INFO Listener] Runner execution has finished with return code 3

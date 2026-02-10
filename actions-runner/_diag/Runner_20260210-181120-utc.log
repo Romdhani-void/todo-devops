@@ -1,0 +1,142 @@
+[2026-02-10 18:11:20Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-02-10 18:11:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:20Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials'
+[2026-02-10 18:11:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:21Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.runner'
+[2026-02-10 18:11:22Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2026-02-10 18:11:22Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26200.
+[2026-02-10 18:11:22Z INFO Listener] Version: 2.331.0
+[2026-02-10 18:11:22Z INFO Listener] Commit: 39f6c643d3032f8795fa71f1482731ca90c8e038
+[2026-02-10 18:11:22Z INFO Listener] Culture: en-US
+[2026-02-10 18:11:22Z INFO Listener] UI Culture: en-US
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:22Z INFO Listener] Validating directory permissions for: 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:22Z INFO CommandLineParser] Parse
+[2026-02-10 18:11:22Z INFO CommandLineParser] Parsing 1 args
+[2026-02-10 18:11:22Z INFO CommandLineParser] parsing argument
+[2026-02-10 18:11:22Z INFO CommandLineParser] HasArgs: False
+[2026-02-10 18:11:22Z INFO CommandLineParser] Adding Command: run
+[2026-02-10 18:11:22Z INFO Listener] Arguments parsed
+[2026-02-10 18:11:22Z INFO Runner] ExecuteCommand
+[2026-02-10 18:11:22Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\Romdhani\Desktop\monday\actions-runner\bin\Runner.Listener.dll
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:22Z INFO ConfigurationStore] binPath: C:\Users\Romdhani\Desktop\monday\actions-runner\bin
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:22Z INFO ConfigurationStore] RootFolder: C:\Users\Romdhani\Desktop\monday\actions-runner
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:22Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.runner'
+[2026-02-10 18:11:22Z INFO ConfigurationStore] ConfigFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.runner
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:22Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.runner_migrated'
+[2026-02-10 18:11:22Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.runner_migrated
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:22Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials'
+[2026-02-10 18:11:22Z INFO ConfigurationStore] CredFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:22Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_migrated'
+[2026-02-10 18:11:22Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_migrated
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:22Z INFO HostContext] Well known config file 'Service': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.service'
+[2026-02-10 18:11:22Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.service
+[2026-02-10 18:11:22Z INFO CommandSettings] Flag 'help': 'False'
+[2026-02-10 18:11:22Z INFO CommandSettings] Flag 'version': 'False'
+[2026-02-10 18:11:22Z INFO CommandSettings] Flag 'commit': 'False'
+[2026-02-10 18:11:22Z INFO CommandSettings] Flag 'check': 'False'
+[2026-02-10 18:11:22Z INFO CommandSettings] Command 'configure': 'False'
+[2026-02-10 18:11:22Z INFO CommandSettings] Command 'remove': 'False'
+[2026-02-10 18:11:22Z INFO CommandSettings] Command 'warmup': 'False'
+[2026-02-10 18:11:22Z INFO ConfigurationManager] LoadSettings
+[2026-02-10 18:11:22Z INFO ConfigurationStore] IsConfigured()
+[2026-02-10 18:11:22Z INFO ConfigurationStore] IsConfigured: True
+[2026-02-10 18:11:22Z INFO ConfigurationManager] Is configured: True
+[2026-02-10 18:11:22Z INFO ConfigurationStore] Read setting file: 315 chars
+[2026-02-10 18:11:22Z INFO ConfigurationManager] Settings Loaded
+[2026-02-10 18:11:22Z INFO ConfigurationStore] IsServiceConfigured()
+[2026-02-10 18:11:22Z INFO ConfigurationStore] IsServiceConfigured: False
+[2026-02-10 18:11:22Z INFO CommandSettings] Command 'run': 'True'
+[2026-02-10 18:11:22Z INFO ConfigurationStore] IsConfigured()
+[2026-02-10 18:11:22Z INFO ConfigurationStore] IsConfigured: True
+[2026-02-10 18:11:22Z INFO ConfigurationManager] Is configured: True
+[2026-02-10 18:11:22Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2026-02-10 18:11:22Z INFO Runner] Set runner startup type - Manual
+[2026-02-10 18:11:22Z INFO CommandSettings] Flag 'once': 'False'
+[2026-02-10 18:11:22Z INFO CommandSettings] Flag 'once': 'False'
+[2026-02-10 18:11:22Z INFO Runner] RunAsync
+[2026-02-10 18:11:22Z INFO ConfigurationManager] LoadMigratedSettings
+[2026-02-10 18:11:22Z INFO ConfigurationStore] IsMigratedConfigured()
+[2026-02-10 18:11:22Z INFO ConfigurationStore] IsMigratedConfigured: False
+[2026-02-10 18:11:22Z INFO Runner] Failed to load migrated settings: No migrated configuration found.
+[2026-02-10 18:11:22Z INFO Runner] Falling back to original .runner settings
+[2026-02-10 18:11:22Z INFO ConfigurationManager] LoadSettings
+[2026-02-10 18:11:22Z INFO ConfigurationStore] IsConfigured()
+[2026-02-10 18:11:22Z INFO ConfigurationStore] IsConfigured: True
+[2026-02-10 18:11:22Z INFO ConfigurationManager] Is configured: True
+[2026-02-10 18:11:22Z INFO ConfigurationManager] Settings Loaded
+[2026-02-10 18:11:22Z INFO MessageListener] {
+  "AgentId": 3,
+  "AgentName": "DESKTOP-D5GHN4B",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus23.actions.githubusercontent.com/6X5hJtj5j6tegjX0UZvUGUKy3qrH1XVtR3m6lu2pxyZQSkB1bU/",
+  "GitHubUrl": "https://github.com/Romdhani-void/todo-devops",
+  "WorkFolder": "_work"
+}
+[2026-02-10 18:11:22Z INFO MessageListener] Loading Credentials
+[2026-02-10 18:11:22Z INFO ConfigurationStore] HasCredentials()
+[2026-02-10 18:11:22Z INFO ConfigurationStore] stored True
+[2026-02-10 18:11:22Z INFO CredentialManager] GetCredentialProvider
+[2026-02-10 18:11:22Z INFO CredentialManager] Creating type OAuth
+[2026-02-10 18:11:22Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:11:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:11:22Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams'
+[2026-02-10 18:11:22Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-10 18:11:22Z INFO MessageListener] Attempt to create session.
+[2026-02-10 18:11:22Z INFO MessageListener] Connecting to the Runner Server...
+[2026-02-10 18:11:22Z INFO RunnerServer] EstablishVssConnection
+[2026-02-10 18:11:22Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2026-02-10 18:11:22Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-02-10 18:11:22Z INFO RunnerServer] EstablishVssConnection
+[2026-02-10 18:11:22Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-02-10 18:11:22Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-02-10 18:11:22Z INFO RunnerServer] EstablishVssConnection
+[2026-02-10 18:11:22Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-02-10 18:11:22Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-02-10 18:11:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-02-10 18:11:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-02-10 18:11:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-02-10 18:11:23Z INFO MessageListener] VssConnection created
+[2026-02-10 18:11:23Z INFO Terminal] WRITE LINE: 
+[2026-02-10 18:11:23Z INFO Terminal] WRITE LINE: 
+[2026-02-10 18:11:23Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-10 18:11:23Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-10 18:11:24Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-02-10 18:11:24Z INFO MessageListener] Session created.
+[2026-02-10 18:11:24Z INFO MessageListener] Registering AuthMigrationChanged event handler.
+[2026-02-10 18:11:24Z INFO Terminal] WRITE LINE: Current runner version: '2.331.0'
+[2026-02-10 18:11:24Z INFO Terminal] WRITE LINE: 2026-02-10 18:11:24Z: Listening for Jobs
+[2026-02-10 18:11:24Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2026-02-10 18:11:24Z INFO ConfigurationStore] HasCredentials()
+[2026-02-10 18:11:24Z INFO ConfigurationStore] stored True
+[2026-02-10 18:11:24Z INFO CredentialManager] GetCredentialProvider
+[2026-02-10 18:11:24Z INFO CredentialManager] Creating type OAuth
+[2026-02-10 18:11:24Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-10 18:11:24Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-10 18:11:24Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-10 18:11:24Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-10 18:11:25Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-02-10 18:12:15Z INFO ConfigurationStore] HasCredentials()
+[2026-02-10 18:12:15Z INFO ConfigurationStore] stored True
+[2026-02-10 18:12:15Z INFO CredentialManager] GetCredentialProvider
+[2026-02-10 18:12:15Z INFO CredentialManager] Creating type OAuth
+[2026-02-10 18:12:15Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-10 18:12:15Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams

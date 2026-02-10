@@ -78,12 +78,19 @@ jobs:
             romdhani01/myday-frontend:latest
 
   deploy:
-       needs: docker-images
-       runs-on: self-hosted
-       if: github.event_name == 'push'
-       steps:
-         - name: Pull latest images
-           run: docker compose pull
+    needs: [docker-images]
+    runs-on: self-hosted
+    if: github.event_name == 'push'
+    steps:
+      - name: Set Execution Policy
+        shell: powershell
+        run: Set-ExecutionPolicy Bypass -Scope Process -Force
 
-         - name: Recreate containers
-           run: docker compose up -d
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Pull latest images
+        run: docker compose pull
+
+      - name: Deploy
+        run: docker compose up -d --remove-orphans

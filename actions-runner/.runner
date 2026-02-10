@@ -1,11 +1,9 @@
 ﻿{
-  "agentId": 2,
+  "agentId": 3,
   "agentName": "DESKTOP-D5GHN4B",
   "poolId": 1,
   "poolName": "Default",
   "serverUrl": "https://pipelinesghubeus23.actions.githubusercontent.com/6X5hJtj5j6tegjX0UZvUGUKy3qrH1XVtR3m6lu2pxyZQSkB1bU/",
   "gitHubUrl": "https://github.com/Romdhani-void/todo-devops",
-  "workFolder": "_work",
-  "useV2Flow": true,
-  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+  "workFolder": "_work"
 }
