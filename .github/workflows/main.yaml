@@ -1,0 +1,74 @@
+name: CI/CD Pipeline
+
+
+on:
+  push:
+    branches: [ "main" ] # Runs every time you push to the 'main' branch
+  pull_request:
+    branches: [ "main" ]
+
+
+#backend build and test
+jobs:
+  backend-testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install & Build Backend
+        run: |
+          cd backend
+          npm Install
+          npm run build
+  
+#frontend build
+  frontend-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install & Build Frontend
+        run: |
+          cd frontend
+          npm Install
+          npm run build
+
+#deploy to docker hub
+  docker-images:
+    needs: [backend-testing, frontend-build] # Wait for previous jobs to finish
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' # Only build images on actual pushes, not PRs
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }} # Secret password from GitHub
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build/Push Backend Image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./backend #Path to the Dockerfile
+          push: true
+          tags: romdhani01/monday-backend:latest
+
+      - name: Build/Push Frontend Image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./frontend #Path to the Dockerfile
+          push: true
+          tags: romdhani01/monday-frontend:latest

@@ -1,0 +1,58 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: postgres
+    shm_size: 128mb
+    env_file:
+      - ./backend/.env
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - monday-network
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    ports:
+      - 8080:8080
+    networks:
+      - monday-network
+    depends_on:
+      - postgres
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - 5000:5000
+    networks:
+      - monday-network
+    depends_on:
+      - postgres
+    env_file:
+      - ./backend/.env
+    environment:
+      DB_HOST: postgres
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - 5173:80
+    networks:
+      - monday-network
+    depends_on:
+      - backend
+
+volumes:
+  postgres-data:
+
+networks:
+  monday-network:
+    driver: bridge
