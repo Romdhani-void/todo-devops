@@ -3,9 +3,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ "main" ] # Runs every time you push to the 'main' branch
+    branches: [ "master" ] # Runs every time you push to the 'master' branch
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 
 #backend build and test
