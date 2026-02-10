@@ -23,7 +23,7 @@ services:
       - postgres
 
   backend:
-    image: romdhani01/monday-backend:latest
+    image: romdhani01/myday-backend:latest
     container_name: myDay-backend
     ports:
       - 5000:5000
@@ -37,7 +37,7 @@ services:
       DB_HOST: postgres
 
   frontend:
-    image: romdhani01/monday-frontend:latest
+    image: romdhani01/myday-frontend:latest
     container_name: myDay-frontend
     ports:
       - 5173:80

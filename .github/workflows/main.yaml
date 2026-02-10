@@ -76,3 +76,14 @@ jobs:
           tags: |
             romdhani01/myday-frontend:1.0.${{ github.run_number }}
             romdhani01/myday-frontend:latest
+
+  deploy:
+       needs: docker-images
+       runs-on: self-hosted
+       if: github.event_name == 'push'
+       steps:
+         - name: Pull latest images
+           run: docker compose pull
+
+         - name: Recreate containers
+           run: docker compose up -d
