@@ -23,10 +23,8 @@ services:
       - postgres
 
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-    container_name: backend
+    image: romdhani01/monday-backend:latest
+    container_name: myDay-backend
     ports:
       - 5000:5000
     networks:
@@ -39,10 +37,8 @@ services:
       DB_HOST: postgres
 
   frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    container_name: frontend
+    image: romdhani01/monday-frontend:latest
+    container_name: myDay-frontend
     ports:
       - 5173:80
     networks:
