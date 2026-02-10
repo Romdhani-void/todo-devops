@@ -84,7 +84,7 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>📝 Monday Todo App</h1>
+        <h1>📝 My Day - Todo App</h1>
         <p className="subtitle">Organize your tasks with our full-stack application</p>
       </header>
 
