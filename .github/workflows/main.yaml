@@ -24,7 +24,7 @@ jobs:
       - name: Install & Build Backend
         run: |
           cd backend
-          npm Install
+          npm install
           npm run build
   
 #frontend build
@@ -41,7 +41,7 @@ jobs:
       - name: Install & Build Frontend
         run: |
           cd frontend
-          npm Install
+          npm install
           npm run build
 
 #deploy to docker hub
