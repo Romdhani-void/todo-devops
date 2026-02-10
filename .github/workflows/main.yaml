@@ -64,11 +64,11 @@ jobs:
         with:
           context: ./backend #Path to the Dockerfile
           push: true
-          tags: romdhani01/monday-backend:latest
+          tags: romdhani01/monday-backend:1.0.${{ github.run_number }}
 
       - name: Build/Push Frontend Image
         uses: docker/build-push-action@v5
         with:
           context: ./frontend #Path to the Dockerfile
           push: true
-          tags: romdhani01/monday-frontend:latest
+          tags: romdhani01/monday-frontend:1.0.${{ github.run_number }}   
