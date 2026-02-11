@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "Romdhani-void/todo-devops",
+  "pipelineDirectory": "todo-devops",
+  "workspaceDirectory": "todo-devops\\todo-devops",
+  "repositories": {
+    "Romdhani-void/todo-devops": {
+      "repositoryPath": "todo-devops\\todo-devops",
+      "lastRunOn": "02/10/2026 19:16:35 +01:00"
+    }
+  },
+  "lastRunOn": "02/10/2026 19:16:35 +01:00"
+}

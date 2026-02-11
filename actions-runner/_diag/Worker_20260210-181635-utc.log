@@ -1,0 +1,3656 @@
+[2026-02-10 18:16:35Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.runner'
+[2026-02-10 18:16:35Z INFO Worker] Version: 2.331.0
+[2026-02-10 18:16:35Z INFO Worker] Commit: 39f6c643d3032f8795fa71f1482731ca90c8e038
+[2026-02-10 18:16:35Z INFO Worker] Culture: en-US
+[2026-02-10 18:16:35Z INFO Worker] UI Culture: en-US
+[2026-02-10 18:16:35Z INFO Worker] Waiting to receive the job message from the channel.
+[2026-02-10 18:16:35Z INFO ProcessChannel] Receiving message of length 20380, with hash '2626c91563086f449255227e05fa6d4fa7b2704772144c86b9153e9aa0af4839'
+[2026-02-10 18:16:35Z INFO Worker] Message received.
+[2026-02-10 18:16:35Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/main.yaml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 85,
+        "col": 15,
+        "lit": "Set Execution Policy"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 87,
+              "col": 14,
+              "lit": "Set-ExecutionPolicy Bypass -Scope Process -Force"
+            }
+          },
+          {
+            "key": "shell",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 86,
+              "col": 16,
+              "lit": "powershell"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "cd306481-fecd-4ded-8abe-8f766edfc28e",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 89,
+        "col": 15,
+        "lit": "Checkout Code"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "c6dadc31-277a-4cb1-9960-8c6f398a6400",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 92,
+        "col": 15,
+        "lit": "Pull latest images"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 93,
+              "col": 14,
+              "lit": "docker compose pull"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "b60c30ea-cee5-4895-b864-24fbe4798554",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 95,
+        "col": 15,
+        "lit": "Deploy"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 96,
+              "col": 14,
+              "lit": "docker compose up -d --remove-orphans"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "6d99fc8a-b8c6-4e6d-a184-e1ae69c991ba",
+      "name": "__run_3"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "true"
+    },
+    "actions_container_action_runner_temp": {
+      "value": "true"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_runner_compare_workflow_parser": {
+      "value": "false"
+    },
+    "actions_set_orchestration_id_env_for_actions": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "deploy"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "f3dc11b7-29cd-42c5-b6d0-237c0406b905.deploy.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "deploy"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "f3dc11b7-29cd-42c5-b6d0-237c0406b905",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "f3dc11b7-29cd-42c5-b6d0-237c0406b905",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "dab15890-5a54-5237-bb13-8ba8aea1426c",
+  "jobDisplayName": "deploy",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/6X5hJtj5j6tegjX0UZvUGUKy3qrH1XVtR3m6lu2pxyZQSkB1bU/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus23.actions.githubusercontent.com/6X5hJtj5j6tegjX0UZvUGUKy3qrH1XVtR3m6lu2pxyZQSkB1bU/",
+          "GenerateIdTokenUrl": "",
+          "ConnectivityChecks": "[\"https://broker.actions.githubusercontent.com/health\",\"https://token.actions.githubusercontent.com/ready\",\"https://run.actions.githubusercontent.com/health\"]"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-1-azure-eastus.actions.githubusercontent.com/52/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/master"
+        },
+        {
+          "k": "sha",
+          "v": "a8c47eec588e84f88ef548281fe8a0cbf737d87b"
+        },
+        {
+          "k": "repository",
+          "v": "Romdhani-void/todo-devops"
+        },
+        {
+          "k": "repository_owner",
+          "v": "Romdhani-void"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "66566512"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/Romdhani-void/todo-devops.git"
+        },
+        {
+          "k": "run_id",
+          "v": "21876979727"
+        },
+        {
+          "k": "run_number",
+          "v": "7"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "66566512"
+        },
+        {
+          "k": "actor",
+          "v": "Romdhani-void"
+        },
+        {
+          "k": "workflow",
+          "v": "CI/CD Pipeline"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "master"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "a8c47eec588e84f88ef548281fe8a0cbf737d87b"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "cf791ead51d4e247f8cf108a1272b81ee9f50ef0"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "Romdhanimohamedali06@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Romdhani Mohamed Ali"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Romdhani-void"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "Romdhanimohamedali06@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Romdhani Mohamed Ali"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Romdhani-void"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "a8c47eec588e84f88ef548281fe8a0cbf737d87b"
+                        },
+                        {
+                          "k": "message",
+                          "v": "add fresh runner"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2026-02-10T19:13:53+01:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "b1d2df290b7fa04df103af4b2a65603c3b277211"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/Romdhani-void/todo-devops/commit/a8c47eec588e84f88ef548281fe8a0cbf737d87b"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/Romdhani-void/todo-devops/compare/cf791ead51d4...a8c47eec588e"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "Romdhanimohamedali06@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Romdhani Mohamed Ali"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Romdhani-void"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "Romdhanimohamedali06@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Romdhani Mohamed Ali"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Romdhani-void"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "a8c47eec588e84f88ef548281fe8a0cbf737d87b"
+                    },
+                    {
+                      "k": "message",
+                      "v": "add fresh runner"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2026-02-10T19:13:53+01:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "b1d2df290b7fa04df103af4b2a65603c3b277211"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/Romdhani-void/todo-devops/commit/a8c47eec588e84f88ef548281fe8a0cbf737d87b"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "66566512+Romdhani-void@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "Romdhani-void"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/master"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/Romdhani-void/todo-devops.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1770702905.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "master"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "Romdhani-void/todo-devops"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/Romdhani-void/todo-devops.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/Romdhani-void/todo-devops"
+                    },
+                    {
+                      "k": "id",
+                      "v": 1154204811.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "master"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "todo-devops"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDORMvEiw"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/66566512?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "66566512+Romdhani-void@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/Romdhani-void/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/Romdhani-void/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/Romdhani-void/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/Romdhani-void/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/Romdhani-void"
+                          },
+                          {
+                            "k": "id",
+                            "v": 66566512.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "Romdhani-void"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Romdhani-void"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDQ6VXNlcjY2NTY2NTEy"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/Romdhani-void/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/Romdhani-void/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/Romdhani-void/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/Romdhani-void/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/Romdhani-void/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/Romdhani-void"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1770747288.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 42.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:Romdhani-void/todo-devops.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/Romdhani-void/todo-devops"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2026-02-10T17:32:24Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/Romdhani-void/todo-devops"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/66566512?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/Romdhani-void/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/Romdhani-void/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/Romdhani-void/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/Romdhani-void/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/Romdhani-void"
+                    },
+                    {
+                      "k": "id",
+                      "v": 66566512.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "Romdhani-void"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjY2NTY2NTEy"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/Romdhani-void/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/Romdhani-void/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/Romdhani-void/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/Romdhani-void/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/Romdhani-void/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/Romdhani-void"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "Romdhani-void/todo-devops/.github/workflows/main.yaml@refs/heads/master"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "a8c47eec588e84f88ef548281fe8a0cbf737d87b"
+        },
+        {
+          "k": "repository_id",
+          "v": "1154204811"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "Romdhani-void"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "job": {
+      "t": 2,
+      "d": [
+        {
+          "k": "check_run_id",
+          "v": 63148685309.0
+        }
+      ]
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2,
+      "d": [
+        {
+          "k": "docker-images",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "result",
+                "v": "success"
+              },
+              {
+                "k": "outputs",
+                "v": {
+                  "t": 2
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOA_e5cA"
+}
+[2026-02-10 18:16:35Z INFO JobRunner] Job ID dab15890-5a54-5237-bb13-8ba8aea1426c
+[2026-02-10 18:16:35Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\Romdhani\Desktop\monday\actions-runner\bin\Runner.Worker.dll
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO ConfigurationStore] binPath: C:\Users\Romdhani\Desktop\monday\actions-runner\bin
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO ConfigurationStore] RootFolder: C:\Users\Romdhani\Desktop\monday\actions-runner
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.runner'
+[2026-02-10 18:16:35Z INFO ConfigurationStore] ConfigFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.runner
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.runner_migrated'
+[2026-02-10 18:16:35Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.runner_migrated
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials'
+[2026-02-10 18:16:35Z INFO ConfigurationStore] CredFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_migrated'
+[2026-02-10 18:16:35Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_migrated
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known config file 'Service': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.service'
+[2026-02-10 18:16:35Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.service
+[2026-02-10 18:16:35Z INFO ConfigurationStore] Read setting file: 315 chars
+[2026-02-10 18:16:35Z INFO JobRunner] Initializing launch client
+[2026-02-10 18:16:35Z INFO JobServerQueue] Initializing results client
+[2026-02-10 18:16:35Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2026-02-10 18:16:35Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2026-02-10 18:16:35Z INFO JobServerQueue] Start process web console line queue.
+[2026-02-10 18:16:35Z INFO JobServerQueue] Start process file upload queue.
+[2026-02-10 18:16:35Z INFO JobServerQueue] Start results file upload queue.
+[2026-02-10 18:16:35Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-02-10 18:16:35Z INFO JobServerQueue] Start process timeline update queue.
+[2026-02-10 18:16:35Z INFO ExecutionContext] Initializing Job context
+[2026-02-10 18:16:35Z INFO ExecutionContext] Initialize GitHub context
+[2026-02-10 18:16:35Z INFO ExecutionContext] Initialize Env context
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:35Z INFO JobRunner] Starting the job execution context.
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:35Z INFO JobRunner] Validating directory permissions for: 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Tools': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_tool'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:16:35Z INFO JobRunner] Getting job extension.
+[2026-02-10 18:16:35Z INFO JobRunner] Initialize job. Getting all job steps.
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.setup_info'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:35Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_PipelineMapping\Romdhani-void/todo-devops\PipelineFolder.json
+[2026-02-10 18:16:35Z INFO PipelineDirectoryManager] Creating a new tracking config file.
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:35Z INFO PipelineDirectoryManager] Creating pipeline directory.
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:35Z INFO PipelineDirectoryManager] Creating workspace directory.
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:35Z INFO JobExtension] Downloading actions
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:35Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions'
+[2026-02-10 18:16:35Z INFO Worker] Listening for cancel message from the channel.
+[2026-02-10 18:16:35Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2026-02-10 18:16:36Z INFO ResultServer] Successfully started websocket client.
+[2026-02-10 18:16:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '54b608a1-bf14-42d2-89e7-39df1d22dfec', success rate: 1/1.
+[2026-02-10 18:16:36Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:36Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:36Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:36Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions'
+[2026-02-10 18:16:36Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:36Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:36Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:36Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions'
+[2026-02-10 18:16:36Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/34e114876b0b11c390a56381ad16ebd13914f8d5' into C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions\_temp_9176ba77-95be-4d1c-b7f6-1fd808e82a18\a3a1e398-edfe-4ac5-81e0-bffe28226697.zip.
+[2026-02-10 18:16:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '54b608a1-bf14-42d2-89e7-39df1d22dfec', success rate: 1/1.
+[2026-02-10 18:16:36Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2026-02-10 18:16:37Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/zipball/34e114876b0b11c390a56381ad16ebd13914f8d5 X-GitHub-Request-Id: 785E:2E8C5C:38C336:4192B7:698B7605 Http Status: OK
+[2026-02-10 18:16:38Z INFO ActionManager] Finished getting action repository.
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions'
+[2026-02-10 18:16:38Z INFO ActionManifestManagerLegacy] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2026-02-10 18:16:38Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions'
+[2026-02-10 18:16:38Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-02-10 18:16:38Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions'
+[2026-02-10 18:16:38Z INFO ActionManager] Load action that reference repository from 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions\actions\checkout\v4'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions'
+[2026-02-10 18:16:38Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-02-10 18:16:38Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-02-10 18:16:38Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-02-10 18:16:38Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-02-10 18:16:38Z INFO JobExtension] Adding .
+[2026-02-10 18:16:38Z INFO JobExtension] Adding .
+[2026-02-10 18:16:38Z INFO JobExtension] Adding .
+[2026-02-10 18:16:38Z INFO JobExtension] Adding .
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:38Z INFO JobExtension] Total accessible running process: 315.
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:38Z INFO JobExtension] Start checking server connectivity.
+[2026-02-10 18:16:38Z INFO JobExtension] Check server connectivity for https://broker.actions.githubusercontent.com/health.
+[2026-02-10 18:16:38Z INFO JobExtension] Check server connectivity for https://token.actions.githubusercontent.com/ready.
+[2026-02-10 18:16:38Z INFO JobExtension] Check server connectivity for https://run.actions.githubusercontent.com/health.
+[2026-02-10 18:16:38Z INFO JobExtension] Start checking service connectivity in background.
+[2026-02-10 18:16:38Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "54b608a1-bf14-42d2-89e7-39df1d22dfec",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 3,
+  "startTime": "2026-02-10T18:16:35.8437782Z",
+  "finishTime": "2026-02-10T18:16:38.7706906Z"
+}.
+[2026-02-10 18:16:38Z INFO JobRunner] Total job steps: 4.
+[2026-02-10 18:16:38Z INFO JobRunner] Run all job steps.
+[2026-02-10 18:16:38Z INFO StepsRunner] Processing step: DisplayName='Set Execution Policy'
+[2026-02-10 18:16:38Z INFO StepsRunner] Evaluating: success()
+[2026-02-10 18:16:38Z INFO StepsRunner] Result: true
+[2026-02-10 18:16:38Z INFO StepsRunner] Starting the step.
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:38Z INFO StepsRunner] Which2: 'chcp'
+[2026-02-10 18:16:38Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper] Starting process:
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-02-10 18:16:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '54b608a1-bf14-42d2-89e7-39df1d22dfec', success rate: 1/1.
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper] Process started with process id 24472, waiting for process exit.
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper] Finished process 24472 with exit code 0, and elapsed time 00:00:00.0485701.
+[2026-02-10 18:16:38Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:16:38Z INFO ExecutionContext] Write event payload to C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:16:38Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command error
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command group
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-02-10 18:16:38Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-02-10 18:16:38Z INFO ScriptHandler] Which2: 'powershell'
+[2026-02-10 18:16:38Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:38Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:16:38Z INFO ScriptHandler] Which2: 'powershell'
+[2026-02-10 18:16:38Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper] Starting process:
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\e7aed4ad-5f1e-4a2a-b0c2-90f8c2d44784.ps1'"'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\todo-devops\todo-devops'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-02-10 18:16:38Z INFO ProcessInvokerWrapper] Process started with process id 24392, waiting for process exit.
+[2026-02-10 18:16:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'cd306481-fecd-4ded-8abe-8f766edfc28e', success rate: 1/1.
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper] Finished process 24392 with exit code 0, and elapsed time 00:00:00.6866084.
+[2026-02-10 18:16:39Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\_runner_file_commands\step_summary_decc61c4-7ab9-4e2f-8393-2a7a58f470b1) is empty; skipping attachment upload
+[2026-02-10 18:16:39Z INFO StepsRunner] Step result: 
+[2026-02-10 18:16:39Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "cd306481-fecd-4ded-8abe-8f766edfc28e",
+  "stepContextName": "__run",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-02-10T18:16:38.7842328Z",
+  "finishTime": "2026-02-10T18:16:39.6186643Z"
+}.
+[2026-02-10 18:16:39Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-02-10 18:16:39Z INFO StepsRunner] Current state: job state = ''
+[2026-02-10 18:16:39Z INFO StepsRunner] Processing step: DisplayName='Checkout Code'
+[2026-02-10 18:16:39Z INFO StepsRunner] Evaluating: success()
+[2026-02-10 18:16:39Z INFO StepsRunner] Result: true
+[2026-02-10 18:16:39Z INFO StepsRunner] Starting the step.
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:39Z INFO StepsRunner] Which2: 'chcp'
+[2026-02-10 18:16:39Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper] Starting process:
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper] Process started with process id 22320, waiting for process exit.
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper] Finished process 22320 with exit code 0, and elapsed time 00:00:00.0263787.
+[2026-02-10 18:16:39Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions'
+[2026-02-10 18:16:39Z INFO ActionManager] Load action that reference repository from 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions\actions\checkout\v4'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions'
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-02-10 18:16:39Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-02-10 18:16:39Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-02-10 18:16:39Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-02-10 18:16:39Z INFO ExecutionContext] Reserve record order 6 to 10 for post job actions.
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:16:39Z INFO ExecutionContext] Write event payload to C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:16:39Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "Romdhani-void/todo-devops"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'ref': default value evaluate result: ""
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'ssh-key': default value evaluate result: ""
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'ssh-known-hosts': default value evaluate result: ""
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'path': default value evaluate result: ""
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 76,
+  "col": 14,
+  "lit": "1"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2026-02-10 18:16:39Z INFO ActionManifestManagerLegacy] Input 'github-server-url': default value evaluate result: ""
+[2026-02-10 18:16:39Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command error
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command group
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-02-10 18:16:39Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:39Z INFO HostContext] Well known directory 'Externals': 'C:\Users\Romdhani\Desktop\monday\actions-runner\externals'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper] Starting process:
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Romdhani\Desktop\monday\actions-runner\externals\node20\bin\node.exe'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\todo-devops\todo-devops'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-02-10 18:16:39Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-02-10 18:16:39Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2026-02-10 18:16:39Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-02-10 18:16:39Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\Romdhani\Desktop\monday\actions-runner\_diag\blocks\f3dc11b7-29cd-42c5-b6d0-237c0406b905_54b608a1-bf14-42d2-89e7-39df1d22dfec.1
+[2026-02-10 18:16:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:16:41Z INFO ProcessInvokerWrapper] Process started with process id 30324, waiting for process exit.
+[2026-02-10 18:16:41Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2026-02-10 18:16:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:16:41Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-02-10 18:16:41Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\Romdhani\Desktop\monday\actions-runner\_diag\blocks\f3dc11b7-29cd-42c5-b6d0-237c0406b905_cd306481-fecd-4ded-8abe-8f766edfc28e.1
+[2026-02-10 18:16:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:16:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:16:42Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2026-02-10 18:16:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:16:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:16:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:16:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:16:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:16:58Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:16:58Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:16:58Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:08Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:08Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:08Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:18Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:18Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:28Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:28Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:28Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper] Finished process 30324 with exit code 0, and elapsed time 00:00:49.5855587.
+[2026-02-10 18:17:29Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\_runner_file_commands\step_summary_517619e9-fc26-427c-9045-1b3701dc9aac) is empty; skipping attachment upload
+[2026-02-10 18:17:29Z INFO StepsRunner] Step result: 
+[2026-02-10 18:17:29Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "c6dadc31-277a-4cb1-9960-8c6f398a6400",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 50,
+  "startTime": "2026-02-10T18:16:39.6205702Z",
+  "finishTime": "2026-02-10T18:17:29.2666938Z"
+}.
+[2026-02-10 18:17:29Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-02-10 18:17:29Z INFO StepsRunner] Current state: job state = ''
+[2026-02-10 18:17:29Z INFO StepsRunner] Processing step: DisplayName='Pull latest images'
+[2026-02-10 18:17:29Z INFO StepsRunner] Evaluating: success()
+[2026-02-10 18:17:29Z INFO StepsRunner] Result: true
+[2026-02-10 18:17:29Z INFO StepsRunner] Starting the step.
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:29Z INFO StepsRunner] Which2: 'chcp'
+[2026-02-10 18:17:29Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper] Starting process:
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper] Process started with process id 20532, waiting for process exit.
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper] Finished process 20532 with exit code 0, and elapsed time 00:00:00.0334187.
+[2026-02-10 18:17:29Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:17:29Z INFO ExecutionContext] Write event payload to C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:17:29Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-02-10 18:17:29Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command error
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command group
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-02-10 18:17:29Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-02-10 18:17:29Z INFO ScriptHandler] Which2: 'pwsh'
+[2026-02-10 18:17:29Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2026-02-10 18:17:29Z INFO ScriptHandler] Defaulting to powershell
+[2026-02-10 18:17:29Z INFO ScriptHandler] Which2: 'powershell'
+[2026-02-10 18:17:29Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:29Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:17:29Z INFO ScriptHandler] Which2: 'pwsh'
+[2026-02-10 18:17:29Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2026-02-10 18:17:29Z INFO ScriptHandler] Defaulting to powershell
+[2026-02-10 18:17:29Z INFO ScriptHandler] Which2: 'powershell'
+[2026-02-10 18:17:29Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper] Starting process:
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\79c6a29f-0553-45a2-9aec-a0942b1ee849.ps1'"'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\todo-devops\todo-devops'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-02-10 18:17:29Z INFO ProcessInvokerWrapper] Process started with process id 17980, waiting for process exit.
+[2026-02-10 18:17:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c6dadc31-277a-4cb1-9960-8c6f398a6400', success rate: 1/1.
+[2026-02-10 18:17:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:29Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-02-10 18:17:29Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\Romdhani\Desktop\monday\actions-runner\_diag\blocks\f3dc11b7-29cd-42c5-b6d0-237c0406b905_c6dadc31-277a-4cb1-9960-8c6f398a6400.1
+[2026-02-10 18:17:30Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-02-10 18:17:30Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-02-10 18:17:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b60c30ea-cee5-4895-b864-24fbe4798554', success rate: 1/1.
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper] Finished process 17980 with exit code 0, and elapsed time 00:00:08.3739294.
+[2026-02-10 18:17:37Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\_runner_file_commands\step_summary_975e8477-9a93-4f08-8aca-d1417f332a56) is empty; skipping attachment upload
+[2026-02-10 18:17:37Z INFO StepsRunner] Step result: 
+[2026-02-10 18:17:37Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "b60c30ea-cee5-4895-b864-24fbe4798554",
+  "stepContextName": "__run_2",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 9,
+  "startTime": "2026-02-10T18:17:29.2686917Z",
+  "finishTime": "2026-02-10T18:17:37.7320185Z"
+}.
+[2026-02-10 18:17:37Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-02-10 18:17:37Z INFO StepsRunner] Current state: job state = ''
+[2026-02-10 18:17:37Z INFO StepsRunner] Processing step: DisplayName='Deploy'
+[2026-02-10 18:17:37Z INFO StepsRunner] Evaluating: success()
+[2026-02-10 18:17:37Z INFO StepsRunner] Result: true
+[2026-02-10 18:17:37Z INFO StepsRunner] Starting the step.
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:37Z INFO StepsRunner] Which2: 'chcp'
+[2026-02-10 18:17:37Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper] Starting process:
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper] Process started with process id 29308, waiting for process exit.
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper] Finished process 29308 with exit code 0, and elapsed time 00:00:00.0240840.
+[2026-02-10 18:17:37Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:17:37Z INFO ExecutionContext] Write event payload to C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:17:37Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-02-10 18:17:37Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command error
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command group
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-02-10 18:17:37Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-02-10 18:17:37Z INFO ScriptHandler] Which2: 'pwsh'
+[2026-02-10 18:17:37Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2026-02-10 18:17:37Z INFO ScriptHandler] Defaulting to powershell
+[2026-02-10 18:17:37Z INFO ScriptHandler] Which2: 'powershell'
+[2026-02-10 18:17:37Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:37Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:17:37Z INFO ScriptHandler] Which2: 'pwsh'
+[2026-02-10 18:17:37Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2026-02-10 18:17:37Z INFO ScriptHandler] Defaulting to powershell
+[2026-02-10 18:17:37Z INFO ScriptHandler] Which2: 'powershell'
+[2026-02-10 18:17:37Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper] Starting process:
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\1d3451bf-0982-4914-8d20-8463d9d9aef1.ps1'"'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\todo-devops\todo-devops'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-02-10 18:17:37Z INFO ProcessInvokerWrapper] Process started with process id 18780, waiting for process exit.
+[2026-02-10 18:17:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6d99fc8a-b8c6-4e6d-a184-e1ae69c991ba', success rate: 1/1.
+[2026-02-10 18:17:38Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-02-10 18:17:38Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\Romdhani\Desktop\monday\actions-runner\_diag\blocks\f3dc11b7-29cd-42c5-b6d0-237c0406b905_b60c30ea-cee5-4895-b864-24fbe4798554.1
+[2026-02-10 18:17:38Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper] Finished process 18780 with exit code 1, and elapsed time 00:00:00.6122792.
+[2026-02-10 18:17:38Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\_runner_file_commands\step_summary_08decdef-ddf0-4d6b-a366-5b4dc04f9af0) is empty; skipping attachment upload
+[2026-02-10 18:17:38Z INFO StepsRunner] Step result: Failed
+[2026-02-10 18:17:38Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "6d99fc8a-b8c6-4e6d-a184-e1ae69c991ba",
+  "stepContextName": "__run_3",
+  "result": "failed",
+  "errorMessages": [
+    "Process completed with exit code 1."
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-02-10T18:17:37.7339802Z",
+  "finishTime": "2026-02-10T18:17:38.4222222Z"
+}.
+[2026-02-10 18:17:38Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2026-02-10 18:17:38Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-02-10 18:17:38Z INFO StepsRunner] Processing step: DisplayName='Post Checkout Code'
+[2026-02-10 18:17:38Z INFO StepsRunner] Evaluating: always()
+[2026-02-10 18:17:38Z INFO StepsRunner] Result: true
+[2026-02-10 18:17:38Z INFO StepsRunner] Starting the step.
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:38Z INFO StepsRunner] Which2: 'chcp'
+[2026-02-10 18:17:38Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper] Starting process:
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper] Process started with process id 30576, waiting for process exit.
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper] Finished process 30576 with exit code 0, and elapsed time 00:00:00.0284772.
+[2026-02-10 18:17:38Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions'
+[2026-02-10 18:17:38Z INFO ActionManager] Load action that reference repository from 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions\actions\checkout\v4'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions'
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-02-10 18:17:38Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-02-10 18:17:38Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-02-10 18:17:38Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:17:38Z INFO ExecutionContext] Write event payload to C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp'
+[2026-02-10 18:17:38Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "Romdhani-void/todo-devops"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'ref': default value evaluate result: ""
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'ssh-key': default value evaluate result: ""
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'ssh-known-hosts': default value evaluate result: ""
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'path': default value evaluate result: ""
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 76,
+  "col": 14,
+  "lit": "1"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2026-02-10 18:17:38Z INFO ActionManifestManagerLegacy] Input 'github-server-url': default value evaluate result: ""
+[2026-02-10 18:17:38Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command error
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command group
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-02-10 18:17:38Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Externals': 'C:\Users\Romdhani\Desktop\monday\actions-runner\externals'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper] Starting process:
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Romdhani\Desktop\monday\actions-runner\externals\node20\bin\node.exe'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work\todo-devops\todo-devops'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-02-10 18:17:38Z INFO ProcessInvokerWrapper] Process started with process id 16272, waiting for process exit.
+[2026-02-10 18:17:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6d99fc8a-b8c6-4e6d-a184-e1ae69c991ba', success rate: 1/1.
+[2026-02-10 18:17:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7c390e14-9940-42ff-ba6b-640134601fde', success rate: 1/1.
+[2026-02-10 18:17:38Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2026-02-10 18:17:38Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-02-10 18:17:38Z INFO JobServerQueue] Stop aggressive process web console line queue.
+[2026-02-10 18:17:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7c390e14-9940-42ff-ba6b-640134601fde', success rate: 1/1.
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_work'
+[2026-02-10 18:17:39Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-02-10 18:17:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7c390e14-9940-42ff-ba6b-640134601fde', success rate: 1/1.
+[2026-02-10 18:17:39Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-02-10 18:17:39Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\Romdhani\Desktop\monday\actions-runner\_diag\blocks\f3dc11b7-29cd-42c5-b6d0-237c0406b905_6d99fc8a-b8c6-4e6d-a184-e1ae69c991ba.1
+[2026-02-10 18:17:40Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-02-10 18:17:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7c390e14-9940-42ff-ba6b-640134601fde', success rate: 1/1.
+[2026-02-10 18:17:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7c390e14-9940-42ff-ba6b-640134601fde', success rate: 1/1.
+[2026-02-10 18:17:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-10 18:17:43Z INFO ProcessInvokerWrapper] Finished process 16272 with exit code 0, and elapsed time 00:00:04.9852676.
+[2026-02-10 18:17:43Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp\_runner_file_commands\step_summary_a853d7d8-7aee-4ff4-92be-6fddb9be6612) is empty; skipping attachment upload
+[2026-02-10 18:17:43Z INFO StepsRunner] Step result: 
+[2026-02-10 18:17:43Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "7c390e14-9940-42ff-ba6b-640134601fde",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 6,
+  "startTime": "2026-02-10T18:17:38.425089Z",
+  "finishTime": "2026-02-10T18:17:43.4625971Z"
+}.
+[2026-02-10 18:17:43Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-02-10 18:17:43Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-02-10 18:17:43Z INFO JobRunner] Finalize job.
+[2026-02-10 18:17:43Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:43Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:43Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:17:43Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:43Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:43Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:17:43Z INFO JobExtension] Initialize Env context
+[2026-02-10 18:17:43Z INFO JobExtension] Initialize steps context
+[2026-02-10 18:17:43Z INFO JobExtension] Total accessible running process: 313.
+[2026-02-10 18:17:43Z INFO JobExtension] Wait for all connectivity checks to finish.
+[2026-02-10 18:17:43Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2026-02-10 18:17:43Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2026-02-10 18:17:43Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2026-02-10 18:17:43Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "2eb3a7bd-2031-4351-a27b-2e817d0ab7c5",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-02-10T18:17:43.4679912Z",
+  "finishTime": "2026-02-10T18:17:43.4809582Z"
+}.
+[2026-02-10 18:17:43Z INFO JobRunner] Job result after all job steps finish: Failed
+[2026-02-10 18:17:43Z INFO JobRunner] Completing the job execution context.
+[2026-02-10 18:17:43Z INFO JobRunner] Shutting down the job server queue.
+[2026-02-10 18:17:43Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2026-02-10 18:17:44Z INFO JobServerQueue] All queue process task stopped.
+[2026-02-10 18:17:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2eb3a7bd-2031-4351-a27b-2e817d0ab7c5', success rate: 1/1.
+[2026-02-10 18:17:44Z INFO JobServerQueue] Web console line queue drained.
+[2026-02-10 18:17:44Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2026-02-10 18:17:44Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2026-02-10 18:17:44Z INFO JobServerQueue] File upload queue drained.
+[2026-02-10 18:17:44Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-02-10 18:17:44Z INFO JobServerQueue] Uploading 3 file(s) in one shot through results service.
+[2026-02-10 18:17:44Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-02-10 18:17:44Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\Romdhani\Desktop\monday\actions-runner\_diag\blocks\f3dc11b7-29cd-42c5-b6d0-237c0406b905_7c390e14-9940-42ff-ba6b-640134601fde.1
+[2026-02-10 18:17:44Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-02-10 18:17:44Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\Romdhani\Desktop\monday\actions-runner\_diag\blocks\f3dc11b7-29cd-42c5-b6d0-237c0406b905_2eb3a7bd-2031-4351-a27b-2e817d0ab7c5.1
+[2026-02-10 18:17:45Z INFO JobServerQueue] Got a job log file to send to results service.
+[2026-02-10 18:17:45Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\Users\Romdhani\Desktop\monday\actions-runner\_diag\blocks\f3dc11b7-29cd-42c5-b6d0-237c0406b905_dab15890-5a54-5237-bb13-8ba8aea1426c.1
+[2026-02-10 18:17:45Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2026-02-10 18:17:45Z INFO JobServerQueue] Results upload queue drained.
+[2026-02-10 18:17:46Z INFO JobServerQueue] Timeline update queue drained.
+[2026-02-10 18:17:46Z INFO JobServerQueue] Disposing job server ...
+[2026-02-10 18:17:46Z INFO JobServerQueue] Disposing results server ...
+[2026-02-10 18:17:46Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2026-02-10 18:17:46Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\Users\Romdhani\Desktop\monday\actions-runner\_work\_temp
+[2026-02-10 18:17:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-10 18:17:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-10 18:17:46Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag'
+[2026-02-10 18:17:46Z INFO HostContext] Well known config file 'Telemetry': 'C:\Users\Romdhani\Desktop\monday\actions-runner\_diag\.telemetry'
+[2026-02-10 18:17:46Z INFO JobRunner] Raising job completed against run service
+[2026-02-10 18:17:46Z INFO Worker] Job completed.

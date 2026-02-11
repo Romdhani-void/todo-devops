@@ -89,6 +89,22 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Create .env file
+        shell: powershell
+        run: |
+          Set-Content -Path "backend\.env" -Value @"
+          PORT=5000
+          NODE_ENV=production
+          DB_HOST=postgres
+          DB_PORT=5432
+          DB_USER=${{ secrets.DB_USER }}
+          DB_PASSWORD=${{ secrets.DB_PASSWORD }}
+          DB_NAME=${{ secrets.DB_NAME }}
+          POSTGRES_USER=${{ secrets.DB_USER }}
+          POSTGRES_PASSWORD=${{ secrets.DB_PASSWORD }}
+          POSTGRES_DB=${{ secrets.DB_NAME }}
+          "@
+
       - name: Pull latest images
         run: docker compose pull
 
