@@ -1,0 +1,320 @@
+[2026-02-11 00:20:52Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-11 00:20:52Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials'
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-11 00:20:52Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.runner'
+[2026-02-11 00:20:52Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2026-02-11 00:20:52Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26200.
+[2026-02-11 00:20:52Z INFO Listener] Version: 2.331.0
+[2026-02-11 00:20:52Z INFO Listener] Commit: 39f6c643d3032f8795fa71f1482731ca90c8e038
+[2026-02-11 00:20:52Z INFO Listener] Culture: en-US
+[2026-02-11 00:20:52Z INFO Listener] UI Culture: en-US
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-11 00:20:52Z INFO Listener] Validating directory permissions for: 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-11 00:20:52Z INFO CommandLineParser] Parse
+[2026-02-11 00:20:52Z INFO CommandLineParser] Parsing 1 args
+[2026-02-11 00:20:52Z INFO CommandLineParser] parsing argument
+[2026-02-11 00:20:52Z INFO CommandLineParser] HasArgs: False
+[2026-02-11 00:20:52Z INFO CommandLineParser] Adding Command: run
+[2026-02-11 00:20:52Z INFO Listener] Arguments parsed
+[2026-02-11 00:20:52Z INFO Runner] ExecuteCommand
+[2026-02-11 00:20:52Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\Romdhani\Desktop\monday\actions-runner\bin\Runner.Listener.dll
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:52Z INFO ConfigurationStore] binPath: C:\Users\Romdhani\Desktop\monday\actions-runner\bin
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-11 00:20:52Z INFO ConfigurationStore] RootFolder: C:\Users\Romdhani\Desktop\monday\actions-runner
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-11 00:20:52Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.runner'
+[2026-02-11 00:20:52Z INFO ConfigurationStore] ConfigFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.runner
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-11 00:20:52Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.runner_migrated'
+[2026-02-11 00:20:52Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.runner_migrated
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-11 00:20:52Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials'
+[2026-02-11 00:20:52Z INFO ConfigurationStore] CredFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-11 00:20:52Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_migrated'
+[2026-02-11 00:20:52Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_migrated
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-11 00:20:52Z INFO HostContext] Well known config file 'Service': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.service'
+[2026-02-11 00:20:52Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\Romdhani\Desktop\monday\actions-runner\.service
+[2026-02-11 00:20:52Z INFO CommandSettings] Flag 'help': 'False'
+[2026-02-11 00:20:52Z INFO CommandSettings] Flag 'version': 'False'
+[2026-02-11 00:20:52Z INFO CommandSettings] Flag 'commit': 'False'
+[2026-02-11 00:20:52Z INFO CommandSettings] Flag 'check': 'False'
+[2026-02-11 00:20:52Z INFO CommandSettings] Command 'configure': 'False'
+[2026-02-11 00:20:52Z INFO CommandSettings] Command 'remove': 'False'
+[2026-02-11 00:20:52Z INFO CommandSettings] Command 'warmup': 'False'
+[2026-02-11 00:20:52Z INFO ConfigurationManager] LoadSettings
+[2026-02-11 00:20:52Z INFO ConfigurationStore] IsConfigured()
+[2026-02-11 00:20:52Z INFO ConfigurationStore] IsConfigured: True
+[2026-02-11 00:20:52Z INFO ConfigurationManager] Is configured: True
+[2026-02-11 00:20:52Z INFO ConfigurationStore] Read setting file: 315 chars
+[2026-02-11 00:20:52Z INFO ConfigurationManager] Settings Loaded
+[2026-02-11 00:20:52Z INFO ConfigurationStore] IsServiceConfigured()
+[2026-02-11 00:20:52Z INFO ConfigurationStore] IsServiceConfigured: False
+[2026-02-11 00:20:52Z INFO CommandSettings] Command 'run': 'True'
+[2026-02-11 00:20:52Z INFO ConfigurationStore] IsConfigured()
+[2026-02-11 00:20:52Z INFO ConfigurationStore] IsConfigured: True
+[2026-02-11 00:20:52Z INFO ConfigurationManager] Is configured: True
+[2026-02-11 00:20:52Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2026-02-11 00:20:52Z INFO Runner] Set runner startup type - Manual
+[2026-02-11 00:20:52Z INFO CommandSettings] Flag 'once': 'False'
+[2026-02-11 00:20:52Z INFO CommandSettings] Flag 'once': 'False'
+[2026-02-11 00:20:52Z INFO Runner] RunAsync
+[2026-02-11 00:20:52Z INFO ConfigurationManager] LoadMigratedSettings
+[2026-02-11 00:20:52Z INFO ConfigurationStore] IsMigratedConfigured()
+[2026-02-11 00:20:52Z INFO ConfigurationStore] IsMigratedConfigured: False
+[2026-02-11 00:20:52Z INFO Runner] Failed to load migrated settings: No migrated configuration found.
+[2026-02-11 00:20:52Z INFO Runner] Falling back to original .runner settings
+[2026-02-11 00:20:52Z INFO ConfigurationManager] LoadSettings
+[2026-02-11 00:20:52Z INFO ConfigurationStore] IsConfigured()
+[2026-02-11 00:20:52Z INFO ConfigurationStore] IsConfigured: True
+[2026-02-11 00:20:52Z INFO ConfigurationManager] Is configured: True
+[2026-02-11 00:20:52Z INFO ConfigurationManager] Settings Loaded
+[2026-02-11 00:20:52Z INFO MessageListener] {
+  "AgentId": 3,
+  "AgentName": "DESKTOP-D5GHN4B",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus23.actions.githubusercontent.com/6X5hJtj5j6tegjX0UZvUGUKy3qrH1XVtR3m6lu2pxyZQSkB1bU/",
+  "GitHubUrl": "https://github.com/Romdhani-void/todo-devops",
+  "WorkFolder": "_work"
+}
+[2026-02-11 00:20:52Z INFO MessageListener] Loading Credentials
+[2026-02-11 00:20:52Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:20:52Z INFO ConfigurationStore] stored True
+[2026-02-11 00:20:52Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:20:52Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:20:52Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:52Z INFO HostContext] Well known directory 'Root': 'C:\Users\Romdhani\Desktop\monday\actions-runner'
+[2026-02-11 00:20:52Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams'
+[2026-02-11 00:20:52Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:20:52Z INFO MessageListener] Attempt to create session.
+[2026-02-11 00:20:52Z INFO MessageListener] Connecting to the Runner Server...
+[2026-02-11 00:20:52Z INFO RunnerServer] EstablishVssConnection
+[2026-02-11 00:20:52Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2026-02-11 00:20:52Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-02-11 00:20:52Z INFO RunnerServer] EstablishVssConnection
+[2026-02-11 00:20:52Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-02-11 00:20:52Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-02-11 00:20:52Z INFO RunnerServer] EstablishVssConnection
+[2026-02-11 00:20:52Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-02-11 00:20:52Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-02-11 00:20:53Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-02-11 00:20:53Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-02-11 00:20:53Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-02-11 00:20:53Z INFO MessageListener] VssConnection created
+[2026-02-11 00:20:53Z INFO Terminal] WRITE LINE: 
+[2026-02-11 00:20:53Z INFO Terminal] WRITE LINE: 
+[2026-02-11 00:20:53Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:20:53Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:20:54Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-02-11 00:20:54Z INFO MessageListener] Session created.
+[2026-02-11 00:20:54Z INFO MessageListener] Registering AuthMigrationChanged event handler.
+[2026-02-11 00:20:54Z INFO Terminal] WRITE LINE: Current runner version: '2.331.0'
+[2026-02-11 00:20:54Z INFO Terminal] WRITE LINE: 2026-02-11 00:20:54Z: Listening for Jobs
+[2026-02-11 00:20:54Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2026-02-11 00:20:54Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:20:54Z INFO ConfigurationStore] stored True
+[2026-02-11 00:20:54Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:20:54Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:20:54Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:20:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:20:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:20:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:20:55Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-02-11 00:20:57Z INFO MessageListener] Message '4137240547434988635' received from session 'e2a311f3-fd0b-46c0-a4a4-08ad33cf78a8'.
+[2026-02-11 00:20:57Z INFO MessageListener] Acknowledging runner request '357ec478-14e5-5762-adc0-98a811d9106b'.
+[2026-02-11 00:20:57Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:20:57Z INFO ConfigurationStore] stored True
+[2026-02-11 00:20:57Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:20:57Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:20:57Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:20:57Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:20:57Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:20:57Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:20:57Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-02-11 00:20:58Z INFO JobDispatcher] Job request 0 for plan 9975f1b3-4c1b-4d2a-9f80-50d92f31380b job 357ec478-14e5-5762-adc0-98a811d9106b received.
+[2026-02-11 00:20:58Z INFO JobDispatcher] Pull OrchestrationId 9975f1b3-4c1b-4d2a-9f80-50d92f31380b.deploy.__default from JWT claims
+[2026-02-11 00:20:58Z INFO MessageListener] Received job status event. JobState: Busy
+[2026-02-11 00:20:58Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2026-02-11 00:20:58Z INFO Terminal] WRITE LINE: 2026-02-11 00:20:58Z: Running job: deploy
+[2026-02-11 00:20:58Z INFO JobDispatcher] Start renew job request 0 for job 357ec478-14e5-5762-adc0-98a811d9106b.
+[2026-02-11 00:20:59Z INFO JobDispatcher] Successfully renew job 357ec478-14e5-5762-adc0-98a811d9106b, job is valid till 2/11/2026 12:31:00 AM
+[2026-02-11 00:20:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:59Z INFO ProcessInvokerWrapper] Starting process:
+[2026-02-11 00:20:59Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin\Runner.Worker.exe'
+[2026-02-11 00:20:59Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2348 2368'
+[2026-02-11 00:20:59Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:20:59Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-02-11 00:20:59Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-02-11 00:20:59Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2026-02-11 00:20:59Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-02-11 00:20:59Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2026-02-11 00:20:59Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-02-11 00:20:59Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2026-02-11 00:20:59Z INFO ProcessInvokerWrapper] Process started with process id 26416, waiting for process exit.
+[2026-02-11 00:20:59Z INFO JobDispatcher] Send job request message to worker for job 357ec478-14e5-5762-adc0-98a811d9106b.
+[2026-02-11 00:20:59Z INFO ProcessChannel] Sending message of length 21303, with hash '891817d85307e8d63516389fdfe78eaef42ca9c4bd759343688723dd833c9ea4'
+[2026-02-11 00:20:59Z INFO JobNotification] Entering JobStarted Notification
+[2026-02-11 00:20:59Z INFO JobNotification] Entering StartMonitor
+[2026-02-11 00:21:00Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:21:00Z INFO ConfigurationStore] stored True
+[2026-02-11 00:21:00Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:21:00Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:21:00Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:21:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:21:23Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-11 00:21:23Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-11 00:21:23Z INFO ProcessInvokerWrapper] Finished process 26416 with exit code 102, and elapsed time 00:00:23.9234550.
+[2026-02-11 00:21:23Z INFO JobDispatcher] Worker finished for job 357ec478-14e5-5762-adc0-98a811d9106b. Code: 102
+[2026-02-11 00:21:23Z INFO JobDispatcher] finish job request for job 357ec478-14e5-5762-adc0-98a811d9106b with result: Failed
+[2026-02-11 00:21:23Z INFO Terminal] WRITE LINE: 2026-02-11 00:21:23Z: Job deploy completed with result: Failed
+[2026-02-11 00:21:23Z INFO JobDispatcher] Stop renew job request for job 357ec478-14e5-5762-adc0-98a811d9106b.
+[2026-02-11 00:21:23Z INFO JobDispatcher] job renew has been cancelled, stop renew job 357ec478-14e5-5762-adc0-98a811d9106b.
+[2026-02-11 00:21:23Z INFO JobNotification] Entering JobCompleted Notification
+[2026-02-11 00:21:23Z INFO JobNotification] Entering EndMonitor
+[2026-02-11 00:21:23Z INFO MessageListener] Received job status event. JobState: Online
+[2026-02-11 00:21:50Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:21:50Z INFO ConfigurationStore] stored True
+[2026-02-11 00:21:50Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:21:50Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:21:50Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:21:50Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:22:41Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:22:41Z INFO ConfigurationStore] stored True
+[2026-02-11 00:22:41Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:22:41Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:22:41Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:22:41Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:23:31Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:23:31Z INFO ConfigurationStore] stored True
+[2026-02-11 00:23:31Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:23:31Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:23:31Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:23:31Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:24:22Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:24:22Z INFO ConfigurationStore] stored True
+[2026-02-11 00:24:22Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:24:22Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:24:22Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:24:22Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:25:12Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:25:12Z INFO ConfigurationStore] stored True
+[2026-02-11 00:25:12Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:25:12Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:25:12Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:25:12Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:26:02Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:26:02Z INFO ConfigurationStore] stored True
+[2026-02-11 00:26:02Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:26:02Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:26:02Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:26:02Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:26:31Z INFO MessageListener] Message '4720116861242849819' received from session 'e2a311f3-fd0b-46c0-a4a4-08ad33cf78a8'.
+[2026-02-11 00:26:31Z INFO MessageListener] Acknowledging runner request 'c790c15f-7a84-5516-98bf-47f5ea5e5756'.
+[2026-02-11 00:26:31Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:26:31Z INFO ConfigurationStore] stored True
+[2026-02-11 00:26:31Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:26:31Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:26:31Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:26:31Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:26:31Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:26:31Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:26:31Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-02-11 00:26:32Z INFO JobDispatcher] Job request 0 for plan fd826ea6-2af3-49fc-ba10-7035cb7946a9 job c790c15f-7a84-5516-98bf-47f5ea5e5756 received.
+[2026-02-11 00:26:32Z INFO JobDispatcher] Pull OrchestrationId fd826ea6-2af3-49fc-ba10-7035cb7946a9.deploy.__default from JWT claims
+[2026-02-11 00:26:32Z INFO MessageListener] Received job status event. JobState: Busy
+[2026-02-11 00:26:32Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2026-02-11 00:26:32Z INFO JobDispatcher] Job request 357ec478-14e5-5762-adc0-98a811d9106b processed succeed.
+[2026-02-11 00:26:32Z INFO Terminal] WRITE LINE: 2026-02-11 00:26:32Z: Running job: deploy
+[2026-02-11 00:26:32Z INFO JobDispatcher] Start renew job request 0 for job c790c15f-7a84-5516-98bf-47f5ea5e5756.
+[2026-02-11 00:26:33Z INFO JobDispatcher] Successfully renew job c790c15f-7a84-5516-98bf-47f5ea5e5756, job is valid till 2/11/2026 12:36:34 AM
+[2026-02-11 00:26:33Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:26:33Z INFO ProcessInvokerWrapper] Starting process:
+[2026-02-11 00:26:33Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin\Runner.Worker.exe'
+[2026-02-11 00:26:33Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1236 1136'
+[2026-02-11 00:26:33Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Romdhani\Desktop\monday\actions-runner\bin'
+[2026-02-11 00:26:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-02-11 00:26:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-02-11 00:26:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2026-02-11 00:26:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-02-11 00:26:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2026-02-11 00:26:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-02-11 00:26:33Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2026-02-11 00:26:33Z INFO ProcessInvokerWrapper] Process started with process id 13492, waiting for process exit.
+[2026-02-11 00:26:33Z INFO JobDispatcher] Send job request message to worker for job c790c15f-7a84-5516-98bf-47f5ea5e5756.
+[2026-02-11 00:26:33Z INFO ProcessChannel] Sending message of length 21308, with hash '4476525c752bdbc4629a8ce4c9c85e968cf057fe7d0131baa7320b3ebca0f3cc'
+[2026-02-11 00:26:33Z INFO JobNotification] Entering JobStarted Notification
+[2026-02-11 00:26:33Z INFO JobNotification] Entering StartMonitor
+[2026-02-11 00:26:34Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:26:34Z INFO ConfigurationStore] stored True
+[2026-02-11 00:26:34Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:26:34Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:26:34Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:26:34Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:27:24Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:27:24Z INFO ConfigurationStore] stored True
+[2026-02-11 00:27:24Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:27:24Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:27:24Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:27:24Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:27:33Z INFO JobDispatcher] Successfully renew job c790c15f-7a84-5516-98bf-47f5ea5e5756, job is valid till 2/11/2026 12:37:34 AM
+[2026-02-11 00:27:40Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-11 00:27:40Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-02-11 00:27:40Z INFO ProcessInvokerWrapper] Finished process 13492 with exit code 100, and elapsed time 00:01:07.4657366.
+[2026-02-11 00:27:40Z INFO JobDispatcher] Worker finished for job c790c15f-7a84-5516-98bf-47f5ea5e5756. Code: 100
+[2026-02-11 00:27:40Z INFO JobDispatcher] finish job request for job c790c15f-7a84-5516-98bf-47f5ea5e5756 with result: Succeeded
+[2026-02-11 00:27:40Z INFO Terminal] WRITE LINE: 2026-02-11 00:27:40Z: Job deploy completed with result: Succeeded
+[2026-02-11 00:27:40Z INFO JobDispatcher] Stop renew job request for job c790c15f-7a84-5516-98bf-47f5ea5e5756.
+[2026-02-11 00:27:40Z INFO JobDispatcher] job renew has been cancelled, stop renew job c790c15f-7a84-5516-98bf-47f5ea5e5756.
+[2026-02-11 00:27:40Z INFO JobNotification] Entering JobCompleted Notification
+[2026-02-11 00:27:40Z INFO JobNotification] Entering EndMonitor
+[2026-02-11 00:27:40Z INFO MessageListener] Received job status event. JobState: Online
+[2026-02-11 00:28:15Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:28:15Z INFO ConfigurationStore] stored True
+[2026-02-11 00:28:15Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:28:15Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:28:15Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:28:15Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:29:05Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:29:05Z INFO ConfigurationStore] stored True
+[2026-02-11 00:29:05Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:29:05Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:29:05Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:29:05Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:29:56Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:29:56Z INFO ConfigurationStore] stored True
+[2026-02-11 00:29:56Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:29:56Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:29:56Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:29:56Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:30:46Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:30:46Z INFO ConfigurationStore] stored True
+[2026-02-11 00:30:46Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:30:46Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:30:46Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:30:46Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:31:37Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:31:37Z INFO ConfigurationStore] stored True
+[2026-02-11 00:31:37Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:31:37Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:31:37Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:31:37Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
+[2026-02-11 00:32:27Z INFO ConfigurationStore] HasCredentials()
+[2026-02-11 00:32:27Z INFO ConfigurationStore] stored True
+[2026-02-11 00:32:27Z INFO CredentialManager] GetCredentialProvider
+[2026-02-11 00:32:27Z INFO CredentialManager] Creating type OAuth
+[2026-02-11 00:32:27Z INFO CredentialManager] Creating credential type: OAuth
+[2026-02-11 00:32:27Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Romdhani\Desktop\monday\actions-runner\.credentials_rsaparams
